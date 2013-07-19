@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1141DF47179980BB00D7319B /* UIView+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1141DF46179980BB00D7319B /* UIView+CustomColor.m */; };
 		119B83061798F6A800F6AA49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119B83051798F6A800F6AA49 /* UIKit.framework */; };
 		119B83081798F6A800F6AA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119B83071798F6A800F6AA49 /* Foundation.framework */; };
 		119B830A1798F6A800F6AA49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119B83091798F6A800F6AA49 /* CoreGraphics.framework */; };
@@ -16,11 +17,12 @@
 		119B83181798F6A800F6AA49 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 119B83171798F6A800F6AA49 /* Default.png */; };
 		119B831A1798F6A800F6AA49 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 119B83191798F6A800F6AA49 /* Default@2x.png */; };
 		119B831C1798F6A800F6AA49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 119B831B1798F6A800F6AA49 /* Default-568h@2x.png */; };
-		119B83271798F72000F6AA49 /* UIView+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B83261798F72000F6AA49 /* UIView+CustomColor.m */; };
 		119B832B1798FA5000F6AA49 /* ETMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B832A1798FA5000F6AA49 /* ETMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1141DF45179980BB00D7319B /* UIView+CustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomColor.h"; sourceTree = "<group>"; };
+		1141DF46179980BB00D7319B /* UIView+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomColor.m"; sourceTree = "<group>"; };
 		119B83021798F6A800F6AA49 /* ColorFromAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ColorFromAddress.app; path = "ColorFromAddress-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		119B83051798F6A800F6AA49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		119B83071798F6A800F6AA49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,8 +36,6 @@
 		119B83171798F6A800F6AA49 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		119B83191798F6A800F6AA49 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		119B831B1798F6A800F6AA49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		119B83251798F72000F6AA49 /* UIView+CustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomColor.h"; sourceTree = "<group>"; };
-		119B83261798F72000F6AA49 /* UIView+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomColor.m"; sourceTree = "<group>"; };
 		119B83291798FA5000F6AA49 /* ETMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMainViewController.h; sourceTree = "<group>"; };
 		119B832A1798FA5000F6AA49 /* ETMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1141DF44179980BB00D7319B /* ColorFromAddress */ = {
+			isa = PBXGroup;
+			children = (
+				1141DF45179980BB00D7319B /* UIView+CustomColor.h */,
+				1141DF46179980BB00D7319B /* UIView+CustomColor.m */,
+			);
+			path = ColorFromAddress;
+			sourceTree = SOURCE_ROOT;
+		};
 		119B82F91798F6A800F6AA49 = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +93,7 @@
 		119B830B1798F6A800F6AA49 /* ColorFromAddress-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				119B83241798F70200F6AA49 /* ColorFromAddress */,
+				1141DF44179980BB00D7319B /* ColorFromAddress */,
 				119B83281798FA1D00F6AA49 /* Classes */,
 				119B83141798F6A800F6AA49 /* ETAppDelegate.h */,
 				119B83151798F6A800F6AA49 /* ETAppDelegate.m */,
@@ -105,15 +114,6 @@
 				119B831B1798F6A800F6AA49 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		119B83241798F70200F6AA49 /* ColorFromAddress */ = {
-			isa = PBXGroup;
-			children = (
-				119B83251798F72000F6AA49 /* UIView+CustomColor.h */,
-				119B83261798F72000F6AA49 /* UIView+CustomColor.m */,
-			);
-			path = ColorFromAddress;
 			sourceTree = "<group>";
 		};
 		119B83281798FA1D00F6AA49 /* Classes */ = {
@@ -193,8 +193,8 @@
 			files = (
 				119B83121798F6A800F6AA49 /* main.m in Sources */,
 				119B83161798F6A800F6AA49 /* ETAppDelegate.m in Sources */,
-				119B83271798F72000F6AA49 /* UIView+CustomColor.m in Sources */,
 				119B832B1798FA5000F6AA49 /* ETMainViewController.m in Sources */,
+				1141DF47179980BB00D7319B /* UIView+CustomColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
