@@ -17,10 +17,11 @@
 		119B831A1798F6A800F6AA49 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 119B83191798F6A800F6AA49 /* Default@2x.png */; };
 		119B831C1798F6A800F6AA49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 119B831B1798F6A800F6AA49 /* Default-568h@2x.png */; };
 		119B83271798F72000F6AA49 /* UIView+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B83261798F72000F6AA49 /* UIView+CustomColor.m */; };
+		119B832B1798FA5000F6AA49 /* ETMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B832A1798FA5000F6AA49 /* ETMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		119B83021798F6A800F6AA49 /* ColorFromAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorFromAddress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		119B83021798F6A800F6AA49 /* ColorFromAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ColorFromAddress.app; path = "ColorFromAddress-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		119B83051798F6A800F6AA49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		119B83071798F6A800F6AA49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		119B83091798F6A800F6AA49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -35,6 +36,8 @@
 		119B831B1798F6A800F6AA49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		119B83251798F72000F6AA49 /* UIView+CustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomColor.h"; sourceTree = "<group>"; };
 		119B83261798F72000F6AA49 /* UIView+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomColor.m"; sourceTree = "<group>"; };
+		119B83291798FA5000F6AA49 /* ETMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMainViewController.h; sourceTree = "<group>"; };
+		119B832A1798FA5000F6AA49 /* ETMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,7 @@
 		119B82F91798F6A800F6AA49 = {
 			isa = PBXGroup;
 			children = (
-				119B830B1798F6A800F6AA49 /* ColorFromAddress */,
+				119B830B1798F6A800F6AA49 /* ColorFromAddress-Demo */,
 				119B83041798F6A800F6AA49 /* Frameworks */,
 				119B83031798F6A800F6AA49 /* Products */,
 			);
@@ -78,15 +81,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		119B830B1798F6A800F6AA49 /* ColorFromAddress */ = {
+		119B830B1798F6A800F6AA49 /* ColorFromAddress-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				119B83241798F70200F6AA49 /* Classes */,
+				119B83241798F70200F6AA49 /* ColorFromAddress */,
+				119B83281798FA1D00F6AA49 /* Classes */,
 				119B83141798F6A800F6AA49 /* ETAppDelegate.h */,
 				119B83151798F6A800F6AA49 /* ETAppDelegate.m */,
 				119B830C1798F6A800F6AA49 /* Supporting Files */,
 			);
-			path = ColorFromAddress;
+			path = "ColorFromAddress-Demo";
 			sourceTree = "<group>";
 		};
 		119B830C1798F6A800F6AA49 /* Supporting Files */ = {
@@ -103,11 +107,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		119B83241798F70200F6AA49 /* Classes */ = {
+		119B83241798F70200F6AA49 /* ColorFromAddress */ = {
 			isa = PBXGroup;
 			children = (
 				119B83251798F72000F6AA49 /* UIView+CustomColor.h */,
 				119B83261798F72000F6AA49 /* UIView+CustomColor.m */,
+			);
+			path = ColorFromAddress;
+			sourceTree = "<group>";
+		};
+		119B83281798FA1D00F6AA49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				119B83291798FA5000F6AA49 /* ETMainViewController.h */,
+				119B832A1798FA5000F6AA49 /* ETMainViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -115,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		119B83011798F6A800F6AA49 /* ColorFromAddress */ = {
+		119B83011798F6A800F6AA49 /* ColorFromAddress-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 119B831F1798F6A800F6AA49 /* Build configuration list for PBXNativeTarget "ColorFromAddress" */;
+			buildConfigurationList = 119B831F1798F6A800F6AA49 /* Build configuration list for PBXNativeTarget "ColorFromAddress-Demo" */;
 			buildPhases = (
 				119B82FE1798F6A800F6AA49 /* Sources */,
 				119B82FF1798F6A800F6AA49 /* Frameworks */,
@@ -127,8 +140,8 @@
 			);
 			dependencies = (
 			);
-			name = ColorFromAddress;
-			productName = ColorFromAddress;
+			name = "ColorFromAddress-Demo";
+			productName = "ColorFromAddress-Demo";
 			productReference = 119B83021798F6A800F6AA49 /* ColorFromAddress.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -154,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				119B83011798F6A800F6AA49 /* ColorFromAddress */,
+				119B83011798F6A800F6AA49 /* ColorFromAddress-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +194,7 @@
 				119B83121798F6A800F6AA49 /* main.m in Sources */,
 				119B83161798F6A800F6AA49 /* ETAppDelegate.m in Sources */,
 				119B83271798F72000F6AA49 /* UIView+CustomColor.m in Sources */,
+				119B832B1798FA5000F6AA49 /* ETMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +274,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColorFromAddress/ColorFromAddress-Prefix.pch";
-				INFOPLIST_FILE = "ColorFromAddress/ColorFromAddress-Info.plist";
+				GCC_PREFIX_HEADER = "ColorFromAddress-Demo/ColorFromAddress-Prefix.pch";
+				INFOPLIST_FILE = "ColorFromAddress-Demo/ColorFromAddress-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,8 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ColorFromAddress/ColorFromAddress-Prefix.pch";
-				INFOPLIST_FILE = "ColorFromAddress/ColorFromAddress-Info.plist";
+				GCC_PREFIX_HEADER = "ColorFromAddress-Demo/ColorFromAddress-Prefix.pch";
+				INFOPLIST_FILE = "ColorFromAddress-Demo/ColorFromAddress-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -290,13 +304,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		119B831F1798F6A800F6AA49 /* Build configuration list for PBXNativeTarget "ColorFromAddress" */ = {
+		119B831F1798F6A800F6AA49 /* Build configuration list for PBXNativeTarget "ColorFromAddress-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				119B83201798F6A800F6AA49 /* Debug */,
 				119B83211798F6A800F6AA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
