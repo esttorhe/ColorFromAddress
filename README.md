@@ -12,3 +12,6 @@ tmpVw.backgroundColor = [tmpVw colorFromMemory];
 ```
 
 This was "inspired" by [this blog post]("http://blog.bignerdranch.com/879-peek-a-view/") from [Mark Dalrymple]("http://blog.bignerdranch.com/author/markd/").
+
+##Contact
+[![Twitter: @esttorhe](http://img.shields.io/badge/Twitter%20-%40esttorhe-blue.svg?style=flat)](https://twitter.com/esttorhe)
